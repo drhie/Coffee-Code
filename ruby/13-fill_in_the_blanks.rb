@@ -13,7 +13,6 @@ def replace(string, number, input)
 end
 
 def question(string, number, answer)
-  binding.pry
   status = false
   while status == false
     input = ask(number)
@@ -36,7 +35,7 @@ medium_answers = ['while','break','string','mutate']
 def quiz(difficulty, answers)
   p difficulty
   (answers.length).times do |x|
-    p difficulty = question(difficulty, "__#{x+1}__", answers[x])
+    difficulty = question(difficulty, "__#{x+1}__", answers[x])
   end
 end
 
